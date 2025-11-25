@@ -1,0 +1,165 @@
+.container {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox, Safari 18.2+, Chromium 121+ */
+}
+.container::-webkit-scrollbar { 
+    display: none;  /* Older Safari and Chromium */
+}
+
+
+@font-face {
+    font-family: 'martian';
+    src: url(../fonts/MartianMono-Regular.ttf) format('truetype');
+    font-weight: normal;
+}
+
+/* Alle Buttons */
+.nav-layout {
+    list-style: none;
+    padding-top: 5px;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+
+}
+.navbar a{
+    font-family: 'martian';
+    font-size: 12pt;
+    color: black;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    width: 160px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+/* OG Productions/Home Button */
+
+.Home-hover {
+    display: none;
+}
+a:hover .Home-default{
+    display: none;
+}
+a:hover .Home-hover {
+    display: inline;
+    color: #00B140;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* Projects/View All Button */
+
+.Projects-hover {
+    display: none;
+}
+a:hover .Projects-default{
+    display: none;
+}
+a:hover .Projects-hover {
+    display: inline;
+    color: #00B140;
+    text-align: center;
+}
+
+/* About us Button */
+
+.About-hover {
+    display: none;
+}
+a:hover .About-default{
+    display: none;
+}
+a:hover .About-hover {
+    display: inline;
+    color: #00B140;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Contact Button */
+
+.Contact-hover {
+    display: none;
+}
+a:hover .Contact-default{
+    display: none;
+}
+a:hover .Contact-hover {
+    display: inline;
+    color: #00B140;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Insta Button */
+
+.Insta-hover {
+    display: none;
+}
+a:hover .Insta-default{
+    display: none;
+}
+a:hover .Insta-hover {
+    display: inline;
+    color: #00B140;
+    text-align: center;
+}
+
+.left{
+    flex: 1;
+}
+.middle {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.grid-container{
+    display: grid;
+    width: 100%;
+    margin-top: 9px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-content: center;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+}
+.item img {
+    width: 100%;
+    object-fit: cover; 
+    display: block;
+    border-radius: 0%;
+}
+.gif-title {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: 'martian';
+    font-size: 12 pt;
+    text-align: flex-end;
+}
+.gif-year{
+    margin: 0;
+    padding-top: 0;
+    font-family: 'martian';
+    font-size: 12pt;
+    text-align: center;
+}
